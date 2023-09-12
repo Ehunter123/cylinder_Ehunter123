@@ -5,8 +5,8 @@ import eu.mihosoft.vrl.v3d.Hexagon
 CSG simpleSyntax =new Cylinder(10,40).toCSG() // a one line Cylinder
 
 //create a Cylinder
-CSG myCylinder = new Cylinder(10, // Radius at the bottom
-                      		20, // Radius at the top
+CSG myCylinder = new Cylinder(100, // Radius at the bottom
+                      		50, // Radius at the top
                       		40, // Height
                       		(int)30 //resolution
                       		).toCSG()//convert to CSG to display                    			         ).toCSG()//convert to CSG to display 
@@ -19,10 +19,10 @@ CSG pyramid = new Cylinder(	20, // Radius at the bottom
                       		).toCSG()//convert to CSG to display                    			 
                       		.movex(50)
    //create a Cylinder
-CSG hex = new Hexagon(	20, // Flat to flat radius
+CSG hex = new Hexagon(	100, // Flat to flat radius
                       		40 // Height
                       		).toCSG()//convert to CSG to display                    			 
-                      		.movex(50)
+                      		.movex(100)
                       		.movey(50)
 hex.setName("hex")
 simpleSyntax.setName("simpleSyntax")
